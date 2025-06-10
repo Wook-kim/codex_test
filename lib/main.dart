@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter Demo')),
         body: Center(
-          child: Text('Button pressed \$_counter times'),
+          child: Text('Button pressed \$_counter times', style: TextStyle(color: _counter % 2 == 0 ? Colors.green : Colors.red)),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: _incrementCounter,
